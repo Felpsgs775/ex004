@@ -1,21 +1,28 @@
 ﻿using System;
 using System.Globalization;
+using System.Runtime.InteropServices;
 
-namespace relatorio
+namespace exercicio3
 {
     class Program
     {
-        static void Main(string[] args)
+     static void Main(string[] args)
         {
-            int numero = int.Parse(Console.ReadLine());
-            int horastrabalhadas = int.Parse(Console.ReadLine());
-            float valorsalario = float.Parse(Console.ReadLine());
-            float salario = horastrabalhadas * valorsalario;
+            int A = int.Parse(Console.ReadLine());
+            int B = int.Parse(Console.ReadLine());
+            int C = int.Parse(Console.ReadLine());
+            int D = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("NUMBER: " + numero);
-            Console.WriteLine("SALARY: U$ " + salario.ToString("F2"));
+            int produto1 = A * B;
+            int produto2 = C * D;
+            int diferenca = produto1 - produto2;
+
+            Console.WriteLine(diferenca);
 
 
-        }
+
+
+
+        }  
     }
 }
